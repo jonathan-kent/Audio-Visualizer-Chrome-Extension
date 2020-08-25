@@ -1,0 +1,17 @@
+{
+  "name": "Audio Visualizer",
+  "version": "1.0",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "tabCapture",
+    "tabs"
+  ],
+  "content_security_policy": "script-src 'self' https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ColorPropsPlugin.min.js; object-src 'self'"
+}
